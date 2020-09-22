@@ -85,18 +85,18 @@
     color: #999;
 }
 
-@media(max-width:760px) {
+@media(max-width:1350px) {
     .featured {
         height: 90vh;
     }
     .featured--name {
-        font-size: 32px;
+        font-size: 24px;
     }
     .featured--info {
         font-size: 14px;
     }
     .featured--description {
-        font-size: 12px;
+        font-size: 14px;
         max-width: 100%;
         margin-right: 30px;
     }

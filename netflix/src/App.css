@@ -42,8 +42,14 @@ footer {
   align-items: center;
 }
 
-@media(max-width:760px) {
+@media(max-width:1350px) {
   .movieRow--left, .movieRow--right {
     opacity: 1;
+  }
+  body{
+    font-size: 18px;
+  }
+  footer{
+    font-size: 14px;
   }
 }
