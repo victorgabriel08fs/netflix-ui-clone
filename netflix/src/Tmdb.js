@@ -11,9 +11,14 @@ export default {
     getHomeList: async () => {
         return [{
             slug: 'originals',
-            title: 'Originais da Netflix',
-            items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
+            title: 'Séries Originais da Netflix',
+            items: await basicFetch(`/discover/tv?with_networks=213&language=pt-BR&api_key=${API_KEY}`)
         },
+        // {
+        //     slug: 'originals-movie',
+        //     title: 'Filmes Originais da Netflix',
+        //     items: await basicFetch(`/discover/movie?with_networks=213&language=pt-BR&api_key=${API_KEY}`)
+        // },
         {
             slug: 'trending',
             title: 'Recomendados para Você',
@@ -44,11 +49,11 @@ export default {
             title: 'Terror',
             items: await basicFetch(`/discover/movie?with_genres=27&language=pt-BR&api_key=${API_KEY}`)
         },
-        {
-            slug: 'documentary',
-            title: 'Documentário',
-            items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
-        }
+        // {
+        //     slug: 'documentary',
+        //     title: 'Documentário',
+        //     items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`)
+        // }
 
         ]
     },

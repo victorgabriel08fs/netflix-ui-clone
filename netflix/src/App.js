@@ -17,7 +17,6 @@ function App() {
     const loadAll = async () => {
       let list = await Tmdb.getHomeList();
       setMovieList(list);
-      console.log(list);
 
       let originals = list.filter(i => i.slug === 'originals');
       let randomChosen = Math.floor(Math.random() * (originals[0].items.results.length - 1));
@@ -26,8 +25,9 @@ function App() {
 
       setFeatureData(chosenInfo);
     }
-
     loadAll();
+
+    setInterval(loadAll, 10000);
   }, []);
 
   useEffect(() => {
