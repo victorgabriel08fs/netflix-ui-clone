@@ -60,7 +60,7 @@ function App() {
       <footer>
         Desenvolvido por Victor Gabriel<br />
         Direitos de imagem para Netflix<br />
-        Dados pegos do site themoviedb.org
+        Dados extraído de themoviedb.org
 
       </footer>
       {movieList.length <= 0 &&
